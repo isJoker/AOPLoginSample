@@ -1,5 +1,3 @@
-# AOPLoginSample
-AOP之集中式登录处理
 
 # AOP与AspectJ详解之项目实战
 
