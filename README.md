@@ -465,4 +465,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 2019-12-01 21:05:16.380 6647-6647/com.jokerwan.aoploginsample E/JokerWan: 统计了：跳转订单详情功能，在MainActivity类的goOrderDetail方法，用时6 ms
 
 ```
+通过查看MainActivity.class文件，可以看到已经织入的代码效果
 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191201230748763.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2lzSm9rZXI=,size_22,color_FFFFFF,t_70)
