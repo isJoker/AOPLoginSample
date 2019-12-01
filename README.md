@@ -187,7 +187,7 @@ execution(* android.view.View.OnClickListener.onClick(android.view.View))
 
 
 ### JoinPoint
-上面的实例可以看到，在被注解的方法中有一个JoinPoint类型的参数，这个参数包含了切点（方法）的所有详细信息
+上面的实例可以看到，在被注解的方法中有一个JoinPoint类型的参数，这个参数包含了切点（方法）的所有详细信息。如果使用@Around注解，参数为ProceedingJoinPoint类型，ProceedingJoinPoint是JoinPoint的子类，比JoinPoint多了一个proceed()方法，该方法用来执行切点方法（方法原来的业务逻辑）。
 
 我们通过一个例子来讲解下JoinPoint类型的参数，该实例实现了点击行为统计功能
 
