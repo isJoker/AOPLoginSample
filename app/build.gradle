@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 
-buildscript { // 编译时用Aspect专门的编译器，不再使用传统的javac
+buildscript {
     repositories {
         mavenCentral()
     }
@@ -40,6 +40,9 @@ dependencies {
     implementation 'org.aspectj:aspectjrt:1.8.13'
 }
 
+
+// 编译时用Aspect专门的编译器，不再使用传统的javac
+// 添加如下配置脚本，使Android Studio使用ajc作为编译器编译代码
 import org.aspectj.bridge.IMessage
 import org.aspectj.bridge.MessageHandler
 import org.aspectj.tools.ajc.Main
